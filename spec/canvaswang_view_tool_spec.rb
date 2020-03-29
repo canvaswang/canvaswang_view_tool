@@ -4,6 +4,7 @@ RSpec.describe CanvaswangViewTool do
   end
 
   it "does something useful" do
-    expect(false).to eq(true)
+    copyright = CanvasWangViewTool::Renderer.copyright('Canvas Corp', 'All rights reserved')
+    expect(copyright).to eq('')
   end
 end
